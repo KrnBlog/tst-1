@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3000
 
 app.listen(PORT ,()=>{console.log("listening at 3000")})
 app.get("/",(req,res)=>{
-     res.sendFile(__dirname + "/root.html")
+     res.sendFile(__dirname + "/index1.html")
      console.log("step -1 root")
 })
 app.get("/form",(req,res)=>{
-     res.sendFile(__dirname + "/index.html")
+     res.sendFile(__dirname + "/form.html")
      console.log("step -2 form page get")
 })
 app.post("/form",(req,res)=>{
